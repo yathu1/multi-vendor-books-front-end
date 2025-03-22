@@ -58,12 +58,12 @@ const Header = () => {
                         <ul className='flex justify-start items-center gap-8 font-semibold text-black'>
                             <li className='flex relative justify-center items-center gap-2 text-sm after:absolute after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px]'>
                                 <span><MdEmail /></span>
-                                <span>support@gmail.com</span>
+                                <span>support@easybooks.lk</span>
                             </li>
 
                             <li className='flex relative justify-center items-center gap-2 text-sm '>
                                 <span><IoMdPhonePortrait  /></span>
-                                <span>+(123) 3243 343</span>
+                                <span>+(94) 021-243 3437</span>
                             </li> 
                         </ul>
 
@@ -73,14 +73,15 @@ const Header = () => {
                                     <a href="#"><FaFacebookF /></a>
                                     <a href="#"><FaTwitter /> </a>
                                     <a href="#"><FaLinkedin /></a>
-                                    <a href="#"><FaGithub /> </a> 
+                                
                                 </div>
         <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute before:absolute before:h-[18px] before:bg-[#afafaf] before:w-[1px] before:-left-[20px]'>
             <img src="http://localhost:3000/images/language.png" alt="" />
             <span><IoMdArrowDropdown /></span>
             <ul className='absolute invisible transition-all top-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-            <li>Hindi</li>
+            <li>Sinhala</li>
             <li>English</li>
+            <li>Tamil</li>
             </ul>
         </div>
 
@@ -108,8 +109,8 @@ const Header = () => {
                 <div className='md-lg:w-full w-3/12 md-lg:pt-4'>
                     <div className='flex justify-between items-center'>
  
-                <Link to='/'>
-                    <img src="http://localhost:3000/images/logo.png" alt="" />
+                <Link className='flex justify-center items-center w-full' to='/'>
+                    <img src="http://localhost:3000/images/logo.png"   alt="" />
                 </Link>
                 <div className='justify-center items-center w-[30px] h-[30px] bg-white text-slate-600 border border-slate-600 rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
                     <span> <FaList/> </span>
@@ -121,7 +122,7 @@ const Header = () => {
                 <div className='flex justify-between md-lg:justify-center items-center flex-wrap pl-8'>
                     <ul className='flex justify-start items-start gap-8 text-sm font-bold uppercase md-lg:hidden'>
                         <li>
-                            <Link className={`p-2 block ${pathname === '/' ?  'text-[#059473]' : 'text-slate-600' } `} >Home</Link>
+                            <Link className={`p-2 block  ${pathname === '/' ?  'text-[#059473]' : 'text-slate-600' }  ` } to='/'>Home</Link>
                         </li>
 
                         <li>
@@ -187,14 +188,15 @@ const Header = () => {
         <div className={`w-[300px] z-[9999] transition-all duration-200 fixed ${showShidebar ? '-left-[300px]' : 'left-0 top-0'} overflow-y-auto bg-white h-screen py-6 px-8 `}>
                 <div className='flex justify-start flex-col gap-6'>
                 <Link to='/'>
-                    <img src="http://localhost:3000/images/logo.png" alt="" />
+                    <img src="http://localhost:3000/images/logo.png" alt="logo" />
                 </Link>
     <div className='flex justify-start items-center gap-10'>
     <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute '>
             <img src="http://localhost:3000/images/language.png" alt="" />
             <span><IoMdArrowDropdown /></span>
             <ul className='absolute invisible transition-all top-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-            <li>Hindi</li>
+            <li>Tamil</li>
+            <li>Sinhala</li>
             <li>English</li>
             </ul>
         </div>
@@ -241,7 +243,7 @@ const Header = () => {
         <span><FaPhoneAlt /></span>
         </div>
         <div className='flex justify-end flex-col gap-1'>
-            <h2 className='text-sm font-medium text-slate-700'>+134343455</h2>
+            <h2 className='text-sm font-medium text-slate-700'>+(94) 021-243 34379</h2>
             <span className='text-xs'>Support 24/7</span> 
         </div>
         </div>
@@ -315,7 +317,7 @@ const Header = () => {
         <span><FaPhoneAlt /></span>
         </div>
         <div className='flex justify-end flex-col gap-1'>
-            <h2 className='text-md font-medium text-slate-700'>+1343-43233455</h2>
+            <h2 className='text-md font-medium text-slate-700'>+94-021-243-3437</h2>
             <span className='text-sm'>Support 24/7</span> 
         </div>
         </div>
