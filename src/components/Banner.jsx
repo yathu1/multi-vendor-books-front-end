@@ -47,10 +47,12 @@ const Banner = () => {
                     responsive={responsive}
                 >
                 {
-                   banners.length > 0 && banners.map((b, i) => <Link key={i} to={product/details/${b.link}}>
-                        <img src={ b.banner} alt="" />
-                    </Link> )
-                }
+                     banners.length > 0 && banners.map((b, i) => (
+                         <div key={i}>
+                        <img src={b.banner} alt="" />
+        </div>
+    ))
+}
                 </Carousel>        
                         </div>
                     </div>
