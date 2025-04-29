@@ -298,9 +298,7 @@ const Details = () => {
         <li>
             <a className='w-[38px] h-[38px] hover:bg-[#059473] hover:text-white flex justify-center items-center bg-purple-500 rounded-full text-white' href="#"> <FaLinkedin /> </a>
         </li>
-        <li>
-            <a className='w-[38px] h-[38px] hover:bg-[#059473] hover:text-white flex justify-center items-center bg-blue-500 rounded-full text-white' href="#"> <FaGithub /> </a>
-        </li>
+      
     </ul> 
 
             </div>
@@ -310,9 +308,7 @@ const Details = () => {
                 {
                     product.stock ? <button onClick={buynow} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-green-500/40 bg-[#247462] text-white'>Buy Now</button> : ''
                 }
-                <Link to={`/dashboard/chat/${product.sellerId}`} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-red-500/40 bg-red-500 text-white'>
-                    Chat Seller
-                </Link>
+               
             </div>
 
 
@@ -363,7 +359,7 @@ const Details = () => {
 
             <h2 className='text-slate-600 py-1 font-bold'>{p.name} </h2>
             <div className='flex gap-2'>
-                <h2 className='text-lg font-bold text-slate-600'>${p.price}</h2>
+                <h2 className='text-lg font-bold text-slate-600'>Rs. {p.price}</h2>
                 <div className='flex items-center gap-2'>
                     <Rating ratings={p.rating}  />
                 </div>
@@ -385,7 +381,7 @@ const Details = () => {
 
 <section>
 <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
-<h2 className='text-2xl py-8 text-slate-600'>Related Products </h2>
+<h2 className='text-2xl py-8 text-slate-600'>Related Books </h2>
 <div>
     <Swiper
     slidesPerView='auto'
@@ -428,7 +424,7 @@ const Details = () => {
             <div className='p-4 flex flex-col gap-1'>
             <h2 className='text-slate-600 text-lg font-bold'>{p.name} </h2>
             <div className='flex justify-start items-center gap-3'>
-                <h2 className='text-lg font-bold text-slate-600'>${p.price}</h2>
+                <h2 className='text-lg font-bold text-slate-600'>Rs. {p.price}</h2>
                 <div className='flex'>
                     <Rating ratings={p.rating}  />
                 </div>
