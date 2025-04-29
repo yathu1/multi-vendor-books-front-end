@@ -57,7 +57,7 @@ const FeatureProducts = ({products}) => {
         <div className='w-[85%] flex flex-wrap mx-auto'>
             <div className='w-full'>
             <div className='text-center flex justify-center items-center flex-col text-4xl text-slate-600 font-bold relative pb-[45px]'>
-                <h2>Feature Products </h2>
+                <h2>Feature Books </h2>
                 <div className='w-[100px] h-[2px] bg-[#059473] mt-4'></div>
             </div>
             </div>
@@ -89,7 +89,7 @@ const FeatureProducts = ({products}) => {
         <div className='py-3 text-slate-600 px-2'>
             <h2 className='font-bold'>{p.name} </h2>
             <div className='flex justify-start items-center gap-3'>
-                <span className='text-md font-semibold'>${p.price}</span>
+                <span className='text-md font-semibold'>Rs. {p.price}</span>
                 <div className='flex'>
                     <Rating ratings={p.rating} />
                 </div>

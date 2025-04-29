@@ -37,7 +37,7 @@ const Header = () => {
 
     const redirect_card_page = () => {
         if (userInfo) {
-            navigate('/card')
+            navigate('/cart')
         } else {
             navigate('/login')
         }
@@ -58,7 +58,7 @@ const Header = () => {
                         <ul className='flex justify-start items-center gap-8 font-semibold text-black'>
                             <li className='flex relative justify-center items-center gap-2 text-sm after:absolute after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px]'>
                                 <span><MdEmail /></span>
-                                <span>support@easybooks.lk</span>
+                                <span>support@booknation.lk</span>
                             </li>
 
                             <li className='flex relative justify-center items-center gap-2 text-sm '>

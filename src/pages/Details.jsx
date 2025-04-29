@@ -170,13 +170,13 @@ const Details = () => {
     <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
         <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
             <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
-        <h2 className='text-3xl font-bold'>Product Details </h2>
+        <h2 className='text-3xl font-bold'>Book Details </h2>
         <div className='flex justify-center items-center gap-2 text-2xl w-full'>
                 <Link to='/'>Home</Link>
                 <span className='pt-1'>
                 <IoIosArrowForward />
                 </span>
-                <span>Product Details </span>
+                <span>Book Details </span>
                 </div>
             </div> 
         </div> 
@@ -242,8 +242,8 @@ const Details = () => {
          <div className='text-2xl text-red-500 font-bold flex gap-3'>
             {
                 product.discount !== 0 ? <>
-                Price : <h2 className='line-through'>${product.price}</h2>
-                <h2>${product.price - Math.floor((product.price * product.discount) / 100)} (-{product.discount}%) </h2>
+                Price : <h2 className='line-through'>Rs. {product.price}</h2>
+                <h2>Rs. {product.price - Math.floor((product.price * product.discount) / 100)} (-{product.discount}%) </h2>
                 
                 </> : <h2> Price : ${product.price} </h2>
             }
@@ -263,7 +263,7 @@ const Details = () => {
             <div onClick={inc} className='px-6 cursor-pointer'>+</div>
         </div>
                     <div>
-                        <button onClick={add_card} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-green-500/40 bg-[#059473] text-white'>Add To Card</button>
+                        <button onClick={add_card} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-green-500/40 bg-[#059473] text-white'>Add To Cart</button>
                     </div>
                     
                     </> : ''

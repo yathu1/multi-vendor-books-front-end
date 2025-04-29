@@ -10,8 +10,16 @@ const CheckoutForm = ({orderId}) => {
     const [isLoading, setIsLoading] = useState(false)
 
     const paymentElementOptions = {
-        loyout: 'tabs'
-    }
+        layout: 'tabs',
+        defaultValues: {
+            billingDetails: {
+                address: {
+                    country: 'LK', // Lock the country to Sri Lanka
+                },
+            },
+        },
+        paymentMethodOrder: ['card'], // Exclude CashApp or other unwanted methods
+    };
 
     const submit = async (e) => {
         e.preventDefault()
@@ -23,7 +31,10 @@ const CheckoutForm = ({orderId}) => {
             elements,
             confirmParams: {
                 return_url: 'http://localhost:3000/order/confirm'
-            } 
+            } ,
+            payment_method_data: {
+                type: 'card', // Explicitly allow only card payments
+            },
         })
         if (error.type === 'card_error' || error.type === 'validation_error') {
             setMessage(error.message)
