@@ -93,9 +93,7 @@ const Footer = () => {
                         <li>
                             <a className='w-[38px] h-[38px] hover:bg-[#059473] hover:text-white flex justify-center items-center bg-white rounded-full' href="#"><FaLinkedin/> </a>
                         </li>
-                        <li>
-                            <a className='w-[38px] h-[38px] hover:bg-[#059473] hover:text-white flex justify-center items-center bg-white rounded-full' href="#"><FaGithub/> </a>
-                        </li>
+                    
 
                      </ul>
                 </div> 

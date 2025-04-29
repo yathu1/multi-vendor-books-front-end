@@ -96,7 +96,7 @@ const SearchProducts = () => {
            <section className='py-16'>
             <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
             <div className={` md:block hidden ${!filter ? 'mb-6' : 'mb-0'} `}>
-                <button onClick={() => setFilter(!filter)} className='text-center w-full py-2 px-3 bg-indigo-500 text-white'>Filter Product</button> 
+                <button onClick={() => setFilter(!filter)} className='text-center w-full py-2 px-3 bg-indigo-500 text-white'>Filter Book</button> 
             </div>
 
             <div className='w-full flex flex-wrap'>
@@ -123,7 +123,7 @@ const SearchProducts = () => {
                 )} 
              />  
          <div>
-         <span className='text-slate-800 font-bold text-lg'>${Math.floor(state.values[0])} - ${Math.floor(state.values[1])}</span>  
+         <span className='text-slate-800 font-bold text-lg'>Rs. {Math.floor(state.values[0])} - Rs. {Math.floor(state.values[1])}</span>  
            </div>
          </div>
 
@@ -182,14 +182,14 @@ const SearchProducts = () => {
         
         
         <div className='py-5 flex flex-col gap-4 md:hidden'>
-            <Products title='Latest Product'  products={latest_product} />
+            <Products title='Latest Book'  products={latest_product} />
         </div> 
           </div>
 
         <div className='w-9/12 md-lg:w-8/12 md:w-full'>
             <div className='pl-8 md:pl-0'>
                 <div className='py-4 bg-white mb-10 px-3 rounded-md flex justify-between items-start border'>
-                    <h2 className='text-lg font-medium text-slate-600'> ({totalProduct}) Products </h2>
+                    <h2 className='text-lg font-medium text-slate-600'> ({totalProduct}) Books </h2>
         <div className='flex justify-center items-center gap-3'>
             <select onChange={(e)=>setSortPrice(e.target.value)} className='p-1 border outline-0 text-slate-600 font-semibold' name="" id="">
                 <option value="">Sort By</option>
