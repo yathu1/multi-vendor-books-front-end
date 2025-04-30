@@ -75,6 +75,12 @@ const ShopProducts = ({styles,products}) => {
 
      <div className='flex justify-start items-start flex-col gap-1'>
             <h2 className='font-bold'>{ p.name }</h2>
+            <h2 className='font-bold'>  {p.condition
+                        ? p.condition.charAt(0).toUpperCase() +
+                          p.condition.slice(1) +
+                          " Book"
+                        : "Condition Unknown"}</h2>
+            
             <div className='flex justify-start items-center gap-3'>
                 <span className='text-md font-semibold'>Rs. { p.price }</span>
                 <div className='flex'>
