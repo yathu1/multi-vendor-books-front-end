@@ -3,7 +3,7 @@ const local = 'http://localhost:5000'
 const production = 'http://localhost:6000'
 
 let api_url=''
-let mode = 'local'
+let mode = 'pro'
 
 if(mode === 'pro'){
     api_url = production
