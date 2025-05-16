@@ -32,7 +32,7 @@ const OrderDetails = () => {
             </div>
 
         <div className='text-slate-600'>
-        <h2 className='font-mono'>Price : ${myOrder.price} Include Shipping</h2>
+        <h2 className='font-mono'>Price : Rs. {myOrder.price} Include Shipping</h2>
         <p className='font-mono'> Payment Status : <span className={`py-[1px] text-xs px-3 ${myOrder.payment_status === 'paid' ? 'bg-green-300 text-green-800' : 'bg-red-300 text-red-800' } rounded-md`}> {myOrder.payment_status} </span> </p>
 
         <p className='font-mono'> Order Status : <span className={`py-[1px] text-xs px-3 ${myOrder.delivery_status === 'paid' ? 'bg-green-300 text-green-800' : 'bg-red-300 text-red-800' } rounded-md`}> {myOrder.delivery_status} </span> </p> 
@@ -40,7 +40,7 @@ const OrderDetails = () => {
         </div>
 
     <div className='mt-4'>
-        <h2 className='text-slate-600 text-lg pb-2 font-sans font-bold'>Order Products </h2>
+        <h2 className='text-slate-600 text-lg pb-2 font-sans font-bold'>Order Books </h2>
         <div className='flex gap-5 flex-col'>
             {
                 myOrder.products?.map((p,i) => <div key={i}>
@@ -55,7 +55,7 @@ const OrderDetails = () => {
             </div>
         
         <div className='pl-4 flex flex-col'>
-                <h2 className='text-md text-green-800'>${p.price - Math.floor((p.price * p.discount) / 100)}</h2>
+                <h2 className='text-md text-green-800'>Rs. {p.price - Math.floor((p.price * p.discount) / 100)}</h2>
                 <p className='line-through'>{p.price}</p>
                 <p>-{p.discount}%</p>
         </div>

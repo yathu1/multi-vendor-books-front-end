@@ -88,6 +88,7 @@ const FeatureProducts = ({products}) => {
 
         <div className='py-3 text-slate-600 px-2'>
             <h2 className='font-bold'>{p.name} </h2>
+            <span className='text-sm font-semibold'>{p.condition ? p.condition.charAt(0).toUpperCase() + p.condition.slice(1) + ' Book' : 'Condition Unknown'}</span>
             <div className='flex justify-start items-center gap-3'>
                 <span className='text-md font-semibold'>Rs. {p.price}</span>
                 <div className='flex'>
