@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 import Shops from './pages/Shops';
 import Card from './pages/Card';
 import Shipping from './pages/Shipping';
@@ -43,7 +44,8 @@ function App() {
       <Route path='/products/search?' element={<SearchProducts/>} />
       <Route path='/product/details/:slug' element={<Details/>} /> 
       <Route path='/order/confirm?' element={<ConfirmOrder/>} /> 
-
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/product/:slug' element={<Details/>} />
       <Route path='/dashboard' element={<ProtectUser/>} >
       <Route path='' element={<Dashboard/>} >        
       <Route path='' element={<Index/>} />
