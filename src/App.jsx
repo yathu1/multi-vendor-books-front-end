@@ -22,6 +22,7 @@ import ChangePassword from './components/dashboard/ChangePassword';
 import Wishlist from './components/dashboard/Wishlist';
 import OrderDetails from './components/dashboard/OrderDetails';
 import ConfirmOrder from './pages/ConfirmOrder';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   const dispatch = useDispatch()
@@ -45,6 +46,7 @@ function App() {
       <Route path='/product/details/:slug' element={<Details/>} /> 
       <Route path='/order/confirm?' element={<ConfirmOrder/>} /> 
       <Route path='/contact' element={<Contact/>} />
+      <Route path='/about' element={<AboutUs/>} />
       <Route path='/product/:slug' element={<Details/>} />
       <Route path='/dashboard' element={<ProtectUser/>} >
       <Route path='' element={<Dashboard/>} >        

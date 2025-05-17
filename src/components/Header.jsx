@@ -132,7 +132,7 @@ const Header = () => {
                             <Link className={`p-2 block ${pathname === '/blog' ?  'text-[#059473]' : 'text-slate-600' } `} >Blog</Link>
                         </li>
                         <li>
-                            <Link className={`p-2 block ${pathname === '/about' ?  'text-[#059473]' : 'text-slate-600' } `} >About Us</Link>
+                            <Link to='/about' className={`p-2 block ${pathname === '/about' ?  'text-[#059473]' : 'text-slate-600' } `} >About Us</Link>
                         </li>
                         <li>
                              <Link to='/contact'  className={`py-2 block ${pathname === '/contact' ?  'text-[#059473]' : 'text-slate-600' } `} >Contact Us</Link>
@@ -224,7 +224,7 @@ const Header = () => {
                             <Link className={`py-2 block ${pathname === '/blog' ?  'text-[#059473]' : 'text-slate-600' } `} >Blog</Link>
                         </li>
                         <li>
-                            <Link className={`py-2 block ${pathname === '/about' ?  'text-[#059473]' : 'text-slate-600' } `} >About Us</Link>
+                             <Link to='/about' className={`p-2 block ${pathname === '/about' ?  'text-[#059473]' : 'text-slate-600' } `} >About Us</Link>
                         </li>
                         <li>
                             <Link to='/contact'  className={`py-2 block ${pathname === '/contact' ?  'text-[#059473]' : 'text-slate-600' } `} >Contact Us</Link>
