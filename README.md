@@ -72,12 +72,11 @@ cd multi-vendor-books-front-end
 2. Install dependencies
 npm install
 
-3. Start dev Server
-npm run dev
+3. Start  Server
+npm start
 
 4. Build for production
 npm run build 
-
 
 ## License
 
